@@ -2,7 +2,7 @@
 
 #### 1. 各维度分支因子及其计算方式（目前8个纬度）
 - 有效订单量
- 1. 计算一个周期内的 valid_order_count
+ 1. 计算一个周期内的有效订单数目
   ```
   select count(id) from eleme_order where status_code = 2 group by restaurant_id
   ```
@@ -37,6 +37,7 @@
   3. 迭代计算取消订单分值
 
 
+>  所有用户都需要有分值（基准分值为80），当前周期无交易则以0迭代
 > 可能产生的调整变动说明:
 >   1. 归一化公式中的 coordinate 参数
 >   2. 迭代计算周期，目前7天为一个周期
