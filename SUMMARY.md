@@ -6,4 +6,5 @@
 * [1.3 评分计算模块](13_ping_fen_ji_suan_mo_kuai.md)
 * [1.4 评分查询模块](14_ping_fen_cha_xun_mo_kuai.md)
 * [餐厅评分计算](restaurant_score_caculate.md)
+* 用户评分计算
 
